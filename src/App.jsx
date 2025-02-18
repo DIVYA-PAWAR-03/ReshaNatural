@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Mainpage from './pages/Mainpage'
 import Footer from './components/Footer'
 import Motive from './pages/Motive'
+import Company from './pages/Company'
 
 
 
@@ -16,11 +17,12 @@ function App() {
   return (
     <>
     <Header/>
-   
+    
       <Routes>
         
         <Route path="/" element={<Mainpage />} />
         <Route path="/motive" element={<Motive />} />
+        <Route path="/company" element = {<Company />} />
       </Routes>
       <Footer/>
     </>
