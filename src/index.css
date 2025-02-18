@@ -1,0 +1,230 @@
+/* @import "tailwindcss"; */
+
+:root{
+  --primary-color:#024613;
+  --secondary-color:white;
+  --navbar-bg-color:#38a838;
+  --footer-section-text:rgb(231, 238, 234);
+
+}
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; */
+  background-color: var(--navbar-bg-color);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+  
+}
+.navbar .logo{
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+ 
+}
+.navbar .nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar .nav-links li{
+  list-style: none;
+}
+.navbar .nav-links a{
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 250ms;
+}
+.navbar .nav-links a:hover{
+  color: var(--primary-color);
+}
+.main-container{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.main-container .right-section-content{
+  /* margin: 12rem 0 0 10rem ; */
+  margin-top: 10rem;
+  text-align: center;
+ 
+}
+.main-container .right-section-content h1{
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-left: 5rem;
+}
+.main-container .right-section-content p{
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-left: 2rem;
+  margin-bottom:  4rem;
+}
+
+ .main-img{
+position: sticky;
+  top: 0;
+  z-index: -1;
+  width: 650px;
+}
+.motive{
+  padding: .9rem .9rem;
+  /* margin-top: 10rem; */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.motive:hover{
+  background-color: var(--navbar-bg-color);
+  color:white;
+}
+.footer-section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  background-color: var(--navbar-bg-color);
+  height: 300px;
+}
+.footer-section .search-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.footer-section .search-box input{
+  width: 20rem;
+  padding: .6rem;
+  background-color: rgb(114, 224, 114);
+  border: 0.1px solid rgb(224, 228, 225);
+  color: #000000;
+  font-size: 1rem;
+} 
+
+.footer-section .footer-links{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-section .footer-links li::before{
+  content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5%;
+    background-color:#d6d2d2;;
+    transition: 250ms;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.footer-section .footer-links li:hover::before{
+  transform: scaleX(1);
+}
+.footer-section .footer-links a{
+  color: var(--footer-section-text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer-section .footer-links a:hover{
+  color: #d6d2d2;
+}
+.footer-section .footer-links li{
+  list-style: none;
+  position: relative;
+}
+.footer-section .address-info
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.footer-section .address-info h4,
+.footer-section .correspondance-address h4{
+  color: var(--footer-section-text);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer-section .address-info address,
+.footer-section .correspondance-address address{
+  color: var(--footer-section-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer-section .correspondance-address{
+  margin-top: 6rem;
+  margin-right: 2rem;
+}
+.bottom-bar{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.bottom-bar i{
+  cursor: pointer;
+  transition: 250ms;
+  
+ 
+  
+}
+.bottom-bar i:hover{
+  background-color: var(--navbar-bg-color);
+  border-radius: 100%;
+  box-shadow: 0 0 0 10px var(--navbar-bg-color);
+  
+}
+.heading1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 6rem;
+  margin-left: 3rem;
+ 
+}
+.motive-section{
+  display: flex;
+  justify-content: center;
+  
+}
+.motive-section p{
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.motive-section .motive-img{
+  width: 700px;
+ 
+}
