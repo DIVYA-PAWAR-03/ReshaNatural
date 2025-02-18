@@ -5,6 +5,7 @@ export default function   Mainpage() {
   return (
     <>
       <main>
+        <div className="bg-box"></div>
         <div className="main-container">
           <div className="right-section-content">
             <h1>

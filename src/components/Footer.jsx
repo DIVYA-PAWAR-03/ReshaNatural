@@ -8,8 +8,8 @@ export default function Footer() {
                 <input type="text"  placeholder="Search..."/>
              </div>
              <ul className="footer-links">
-             <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/'}>Company</Link></li>
+             <li><Link to={'/homepage'}>Home</Link></li>
+                <li><Link to={'/company'}>Company</Link></li>
                 <li><Link to={'/'}>Products</Link></li>
                 <li><Link to={'/'}>Innovation</Link></li>
                 <li><Link to={'/'}>Contact Us</Link></li>

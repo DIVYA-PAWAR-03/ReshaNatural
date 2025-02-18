@@ -3,8 +3,8 @@
 :root{
   --primary-color:#024613;
   --secondary-color:white;
-  --navbar-bg-color:#38a838;
-  --footer-section-text:rgb(231, 238, 234);
+  --navbar-bg-color:#38a8389a;
+  --footer-section-text:rgb(6, 31, 6);
 
 }
 
@@ -21,10 +21,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky;
+   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; */
+  z-index: 1000; 
   background-color: var(--navbar-bg-color);
   backdrop-filter: blur(4px);
   padding: 1rem;
@@ -96,10 +96,20 @@
 }
 
  .main-img{
-position: sticky;
+/* position: sticky;
   top: 0;
+  z-index: -1; */
+  height: 100vh;
+  object-fit: cover;
+  width: 35rem;
+}
+.bg-box{
+  clip-path: polygon(0% 0%, 0% 0, 70% 100%, 0 100%);
   z-index: -1;
-  width: 650px;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #37da3757;
 }
 .motive{
   padding: .9rem .9rem;
@@ -119,8 +129,7 @@ position: sticky;
 .footer-section{
   display: flex;
   justify-content: space-between;
-  margin-top: 6rem;
-  background-color: var(--navbar-bg-color);
+  background-color: #97e86b;
   height: 350px;
 }
 .footer-section .search-box{
@@ -133,8 +142,8 @@ position: sticky;
 .footer-section .search-box input{
   width: 20rem;
   padding: .6rem;
-  background-color: rgb(114, 224, 114);
-  border: 0.1px solid rgb(224, 228, 225);
+  background-color: #5ef05e;
+  border: 0.1px solid var(--primary-color);
   color: #000000;
   font-size: 1rem;
 } 
@@ -152,7 +161,7 @@ position: sticky;
     height: 2px;
     width: 100%;
     bottom: -5%;
-    background-color:#d6d2d2;;
+    background-color:var(--footer-section-text);
     transition: 250ms;
     transform: scaleX(0);
     transform-origin: left;
@@ -167,9 +176,7 @@ position: sticky;
   font-size: 1.2rem;
   font-weight: 500;
 }
-.footer-section .footer-links a:hover{
-  color: #d6d2d2;
-}
+
 .footer-section .footer-links li{
   list-style: none;
   position: relative;
@@ -238,12 +245,13 @@ position: sticky;
 {
   font-size: 1.1rem;
   color: var(--primary-color);
-  margin-top: 2rem;
-  margin-left: 3rem;
+  margin: 2rem 3rem 0 3rem;
   text-align: justify;
+  line-height: 1.4rem;
 }
 .motive-section .motive-img{
-  width: 700px;
+  width: 400px;
+  margin-right: 2rem;
  
 }
 .innovation-section .innovation-img{
@@ -304,7 +312,11 @@ fill: var(--navbar-bg-color);
 .comapany-about-text p{
   font-size: 1.1rem;
   color: var(--primary-color);
-  margin: 2rem 2rem 0 3rem;
+  margin: 2rem 4rem 0 3rem;
   text-align: justify;
   line-height: 1.7rem;
+}
+.main-page-img{
+  width: 100%;
+  /* object-fit: cover; */
 }
