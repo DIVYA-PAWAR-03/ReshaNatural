@@ -12,9 +12,10 @@ export default function Header(){
                     <ul className="nav-links">
                         <li><Link  to={'/homepage'}>HOME</Link></li>
                         <li><Link to={'/company'}>COMPANY</Link></li>
-                        <li><Link to={'/'}>PRODUCTS</Link></li>
+                        <li><Link to={'/products'}>PRODUCTS</Link></li>
                         <li><Link to={'/'}>INNOVATION</Link></li>
-                        <li><Link to={'/'}>CONTACT US</Link></li>
+                        
+                        <button className="contact-btn"><li><Link to={'/'}> <b> CONTACT US</b> </Link></li></button>
                     </ul>
                     </div>
             </nav>
