@@ -10,6 +10,8 @@ import Motive from './pages/Motive'
 import Company from './pages/Company'
 import Home from './pages/Home'
 import Products from './pages/Products'
+import ContactUs from './pages/ContactUs'
+
 
 
 
@@ -27,6 +29,8 @@ function App() {
         <Route path="/company" element = {<Company />} />
         <Route path='/homepage' element = {<Home/>}/>
         <Route path='/products' element = {<Products/>}/>
+        <Route path='/motive' element={<Motive/>}/>
+        <Route path='/contact' element = {<ContactUs/>}/> 
       </Routes>
       <Footer/>
     </>

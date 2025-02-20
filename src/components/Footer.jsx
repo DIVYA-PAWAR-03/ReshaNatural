@@ -9,8 +9,8 @@ export default function Footer() {
              <li><Link to={'/homepage'}>Home</Link></li>
                 <li><Link to={'/company'}>Company</Link></li>
                 <li><Link to={'/products'}>Products</Link></li>
-                <li><Link to={'/'}>Innovation</Link></li>
-                <li><Link to={'/'}>Contact Us</Link></li>
+                <li><Link to={'/motive'}>Innovation</Link></li>
+                <li><Link to={'/contact'}>Contact Us</Link></li>
              </ul>
              <div className="address-info">
                 <div className="first-address-sec">
