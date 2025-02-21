@@ -6,7 +6,7 @@ export default function Header(){
         <header>
             <nav className="navbar">
                 <div className="logo">
-                    <h1>Reshanatural</h1>
+                   <Link to={'/'}><h1>Reshanatural</h1></Link> 
                 </div>
                 <div>
                     <ul className="nav-links">

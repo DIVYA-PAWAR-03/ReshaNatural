@@ -28,11 +28,12 @@
   backdrop-filter: blur(4px);
   padding: 1rem;
 }
-.navbar .logo {
+.navbar .logo a{
   color: var(--secondary-color);
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
 }
 .navbar .nav-links {
   display: flex;
@@ -298,7 +299,6 @@
   margin-bottom: 1rem;
 }
 .icons i {
-  font-size: 1.3rem;
   color: var(--primary-color);
   transition: 250ms;
 }
@@ -344,7 +344,17 @@
   text-align: justify;
   line-height: 1.7rem;
 }
-
+.company-icons{
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  margin: 2rem 20rem 2rem 0;
+  color: var(--primary-color);
+  transition: 250ms;
+}
+.company-icons i :hover{
+  color: var(--navbar-bg-color);
+}
 .product-img {
   width: 100%;
   border-radius: var(--img-border-radius);
@@ -456,6 +466,17 @@
   margin: 1rem 2rem 3rem 3rem;
 }
 
+.products-icons{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  transition: 250ms;
+}
+.products-icons i:hover{
+  color: var(--navbar-bg-color);
+}
 .contact-img {
   flex: 1;
   background: url("https://cdn.britannica.com/23/126823-050-820B0A1F/Field-sugarcane-St-George-Parish-Barbados.jpg")

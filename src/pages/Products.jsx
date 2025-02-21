@@ -91,6 +91,15 @@ export default function Products() {
             <img src="/images/jaggery.jpg" alt="" />
         </div>
       </div>
+      
+
+
+      <div className="products-icons">
+        <i className="fa-regular fa-heart like"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-facebook"></i>
+
+        </div>
       </main>
   );
 }

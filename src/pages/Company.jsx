@@ -19,6 +19,12 @@ export default function Company(){
                 </p>
             </div>
         </div>
+        <div className="company-icons">
+        <i className="fa-regular fa-heart like"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-facebook"></i>
+
+        </div>
         </>
     )
 }
