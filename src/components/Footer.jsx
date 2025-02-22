@@ -30,11 +30,11 @@ export default function Footer() {
              <div className="social-media-icons">
              <h4>CONNECT WITH US</h4>
               <div className="social-links">
-             <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-linkedin"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-youtube"></i>
+             <i className="fa-brands fa-twitter twitter"></i>
+            <i className="fa-brands fa-facebook facebook"></i>
+            <i className="fa-brands fa-linkedin linkedin"></i>
+            <i className="fa-brands fa-instagram instagram"></i>
+            <i className="fa-brands fa-youtube youtube"></i>
             </div>
              </div>
              </div>

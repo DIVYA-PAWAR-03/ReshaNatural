@@ -15,7 +15,8 @@ export default function Header(){
                         <li><Link to={'/products'}>PRODUCTS</Link></li>
                         <li><Link to={'/motive'}>INNOVATION</Link></li>
                         
-                        <button className="contact-btn"><li><Link to={'/contact'}> <b> CONTACT US</b> </Link></li></button>
+                        {/* <button className="contact-btn"><li><Link to={'/contact'}> <b> CONTACT US</b> </Link></li></button> */}
+                        <Link to={'/contact'}><button className="contact-btn"><b>CONTACT US</b></button></Link>
                     </ul>
                     </div>
             </nav>
