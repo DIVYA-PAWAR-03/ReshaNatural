@@ -4,8 +4,13 @@ export default function Footer() {
     return(
         <footer>
             <div className="footer-section">
-         
+                <div className="footer-logo-section">
+                  <Link to={'/'}>
+                  <img src="/images/resha-logo.webp" alt="" />
+                  </Link>
+                </div>
              <ul className="footer-links">
+               <h4 className="quick-links">QUICK LINKS</h4>
              <li><Link to={'/homepage'}>Home</Link></li>
                 <li><Link to={'/company'}>Company</Link></li>
                 <li><Link to={'/products'}>Products</Link></li>
@@ -26,8 +31,7 @@ export default function Footer() {
              <h4>CORRESPONDANCE ADDRESS:</h4>
                 <address>1118 vidya-1, lakaki road, Model <br /> colony, Pune 411016, Maharashtra state, India. <br />
                 mobile no:+91-9422465883</address>
-             </div>
-             <div className="social-media-icons">
+                <div className="social-media-icons">
              <h4>CONNECT WITH US</h4>
               <div className="social-links">
              <i className="fa-brands fa-twitter twitter"></i>
@@ -36,6 +40,8 @@ export default function Footer() {
             <i className="fa-brands fa-instagram instagram"></i>
             <i className="fa-brands fa-youtube youtube"></i>
             </div>
+             </div>
+             
              </div>
              </div>
             <div className="line-section">

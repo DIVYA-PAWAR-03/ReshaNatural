@@ -15,7 +15,10 @@ export default function ContactUs(){
                         <label htmlFor=""><b>Email-Id:</b></label> <br />
                         <input type="email" name="" id="" />
                         <br /><br /> 
-                        <label htmlFor=""><b>Comment:</b></label><br />
+                        <label htmlFor="phone"><b>Phone No.:</b></label> <br />
+                        <input type="number" name="" id="" />
+                        <br /><br />
+                        <label htmlFor=""><b>Feedback:</b></label><br />
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                         <br /><br />
                         <button>Submit</button>
