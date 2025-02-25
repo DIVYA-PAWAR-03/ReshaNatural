@@ -1,3 +1,5 @@
+import '../css/innovation-motive.css'
+
 export default function Motive() {
     return(
         <>

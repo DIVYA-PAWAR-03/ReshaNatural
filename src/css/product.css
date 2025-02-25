@@ -1,0 +1,172 @@
+.product-main-container {
+    position: relative;
+  }
+.product-img {
+    width: 100%;
+    border-radius: var(--img-border-radius);
+    object-fit: cover;
+  }
+  .product-text-contaier {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    background-color: var(--navbar-bg-color);
+    backdrop-filter: blur(3px);
+    padding: 2rem;
+    border-radius: var(--img-border-radius);
+  }
+  .product-text-contaier h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+  .product-text-contaier p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin: 1rem 0 1rem 0;
+    line-height: 1.5rem;
+  }
+  .product-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 4rem 2rem 4rem 2rem;
+  }
+  .first-img-container,
+.second-img-container,
+.third-img-container,
+.fourth-img-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+} 
+.pro-img1,
+.pro-img2,
+.pro-img3,
+.pro-img4{
+  width: 250px;
+  object-fit: cover;
+  transition: 250ms;
+  border-radius: 20px;
+  border: 1px solid #008000;
+  object-fit: cover;
+  
+}
+.pro-img1:hover,
+.pro-img2:hover,
+.pro-img3:hover,
+.pro-img4:hover {
+  transform: scale(1.01);
+}
+
+ 
+.product-img-container .img-container{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.295),rgba(3, 204, 80, 0.671));
+    backdrop-filter: blur(2px);
+      padding: .9rem 1.4rem .9rem 0;
+      border-radius: 12px;
+      width: 300px; 
+     
+  }
+  .product-img-container .img-container .pro-img1{
+    background: linear-gradient(rgba(52, 207, 13, 0.438), rgba(4, 92, 163, 0.5));
+      padding: 1.2rem;
+      border-radius: 20px;
+      width: 300px; 
+      object-fit: cover;
+     margin-left: 3rem;
+  }
+  
+  .product-img-container .img-container  .pro-img2{
+    background: linear-gradient(rgba(52, 207, 13, 0.438), rgba(4, 92, 163, 0.5));
+      padding: 1.2rem;
+      border-radius: 20px;
+      width: 300px; 
+      object-fit: cover;
+      margin-left: 3rem;
+  }
+  
+  .product-img-container .img-container  .pro-img3{
+    background: linear-gradient(rgba(52, 207, 13, 0.438), rgba(4, 92, 163, 0.5));
+      padding: 1.2rem;
+      border-radius: 20px;
+      width: 300px; 
+      object-fit: cover;
+      margin-left: 3rem;
+  }
+  .product-img-container .img-container  .pro-img4{
+    background: linear-gradient(rgba(52, 207, 13, 0.438), rgba(4, 92, 163, 0.5));
+      padding: 1.2rem;
+      border-radius: 20px;
+      width: 300px; 
+      object-fit: cover;
+  }
+  
+  .product-description,
+  .gaggery-desc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .product-description .product-desc-img img {
+    height: 500px;
+    margin: 10rem 4rem 3rem 3rem;
+    border-radius: var(--img-border-radius);
+    box-shadow:var( --box-shadow);
+    object-fit: cover;
+  }
+  .product-description .product-desc-one {
+    margin: 3rem 3rem 3rem 2rem;
+    text-align: justify;
+  }
+  .product-description .product-desc-one h2,
+  .gaggery-desc .gaggery-desc-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .product-description .product-desc-one h3,
+  .gaggery-desc .gaggery-desc-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .product-description .product-desc-one p,
+.gaggery-desc .gaggery-desc-section p {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin: 1rem 0 1rem 0;
+  line-height: 1.7rem;
+}
+.product-description .product-desc-one li,
+.gaggery-desc .gaggery-desc-section li {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+.gaggery-desc .gaggery-img img {
+  height: 400px;
+  margin: 7rem 3rem 3rem 3rem;
+  border-radius: var(--img-border-radius);
+  box-shadow: var( --box-shadow);
+  object-fit: cover;
+}
+.gaggery-desc .gaggery-desc-section {
+  text-align: justify;
+  margin: 1rem 2rem 3rem 3rem;
+}
+.products-icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    transition: 250ms;
+  }
+  .products-icons i:hover{
+    color: var(--navbar-bg-color);
+  }
+  

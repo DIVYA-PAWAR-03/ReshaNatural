@@ -1,3 +1,6 @@
+import '../css/product.css'
+
+
 export default function Products() {
   return (
     <main>

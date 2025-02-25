@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../css/home.css'
 export default function Home() {
   return (
     <main>
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </div>
       <div className="tradition-section">
-        <img src="/images/farm-home1.jpg" alt=""  />
+       
         <div className="info-section">
           <div className="first-column-section">
             <h4>Tradition</h4>

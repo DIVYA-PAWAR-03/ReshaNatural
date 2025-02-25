@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import {Route ,Routes } from 'react-router-dom'
 import './App.css'
+
 import Header from './components/Header'
 import Mainpage from './pages/Mainpage'
 import Footer from './components/Footer'
@@ -11,7 +12,7 @@ import Company from './pages/Company'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ContactUs from './pages/ContactUs'
-
+import ThemeToggle from "./javascript/ThemeToggle";
 
 
 
@@ -21,7 +22,7 @@ function App() {
   return (
     <>
     <Header/>
-    
+    <ThemeToggle/>
       <Routes>
         
         <Route path="/" element={<Mainpage />} />

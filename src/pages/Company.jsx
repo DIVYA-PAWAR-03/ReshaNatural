@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../css/company.css'
 export default function Company(){
     return(
         <>

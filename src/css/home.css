@@ -1,0 +1,282 @@
+.home-main-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;  
+  }
+  .home-page-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -1; 
+  }
+  .overlap-heading-container{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    color: var(--secondary-color);
+  
+  }
+  .overlap-heading-container .resha-box {
+    background-color: #ffffff88;
+    backdrop-filter: blur(1px);
+    color: var(--primary-color);
+    padding: .9rem 1rem;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .resha-box{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #5af180;
+    text-shadow: var(--text-shadow);
+  }
+   .natural-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    text-shadow: var(--text-shadow);
+    background-color: #0563055e;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+  }
+  .resha-imp-points{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0 4rem 0;
+    
+  }
+  .resha-setup,
+  .resha-philosophy{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+   margin: 4rem 2rem 4rem 2rem;
+    background-color: #0b500b6b;
+    backdrop-filter: blur(9px);
+   padding: 2rem; 
+   border-radius: 15px;
+   box-shadow: var( --box-shadow);
+   transition: 250ms;
+  }
+  .resha-setup:hover,
+  .resha-philosophy:hover{
+    transform: scale(1.03);
+  }
+  .resha-setup ol,
+.resha-philosophy ol{
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin: 1rem 0 1rem 0;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.resha-setup h3,
+.resha-philosophy h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+/* .tradition-section .info-section{
+  display: flex;
+   justify-content: center;
+  align-items: center; 
+ background-image: url("/images/farm-home1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ width:100%;
+ height:fit-content;
+
+ 
+}
+  
+  .tradition-section .first-tradition-section,
+  .tradition-section .second-tradition-section{
+     display: flex;
+    justify-content: center; 
+    gap: 2rem;
+    margin: 4rem 2rem 4rem 2rem;  
+  } */
+  /* .tradition-section .info-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    top: 0;
+    z-index: 99;
+    transform: translateY(10%);
+    background-color: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 0 5rem;
+  } */
+  /* .first-column-section h4,
+  .second-column-section h4,
+  .third-column-section h4,
+  .fourth-column-section h4{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .first-column-section p,
+.second-column-section p,
+.third-column-section p,
+.fourth-column-section p{
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  line-height: 1.5rem;
+} */
+/* .first-column-section,
+.fourth-column-section{
+  background-color: #5af1804d;
+  backdrop-filter: blur(1px);
+  padding: 1rem;
+  
+}
+.second-column-section,
+.third-column-section{
+  background-color: #07f7434d;
+  backdrop-filter: blur(1px);
+  padding: 1rem;
+}
+.first-column-section,
+.second-column-section,
+.third-column-section,
+.fourth-column-section{
+transition: 250ms;
+}
+.first-column-section:hover,
+.second-column-section:hover,
+.third-column-section:hover,
+.fourth-column-section:hover{
+  transform: scale(1.02);
+} */
+
+
+/* Ensure all sections inside .info-section align properly */
+.tradition-section .info-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  margin: 0 5rem 5rem 5rem;
+  min-height: 100vh;
+  
+}
+.tradition-section .info-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/farm-home1.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.3; /* Adjust opacity for visibility */
+  z-index: -1; /* Places the image behind the text */
+  border-radius: 20px;
+}
+
+.second-column-section {
+  grid-column: 2 / 3; 
+  grid-row: 1 / 2; 
+  background-color: #07f7434d;
+  backdrop-filter: blur(2px);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+
+.first-column-section {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #5af1804d;
+  padding: 1.5rem;
+}
+
+.third-column-section {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #07f7434d;
+  padding: 1.5rem;
+}
+
+.fourth-column-section {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #5af1804d;
+  padding: 1.5rem;
+}
+
+.first-column-section h4,
+  .second-column-section h4,
+  .third-column-section h4,
+  .fourth-column-section h4{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .first-column-section p,
+  .second-column-section p,
+  .third-column-section p,
+  .fourth-column-section p{
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    line-height: 1.5rem;
+  } 
+  .first-column-section,
+  .fourth-column-section{
+    background-color: #5af1804d;
+    backdrop-filter: blur(1px);
+    padding: 1rem;
+  }
+  .second-column-section,
+  .third-column-section{
+    background-color: #07f7434d;
+    backdrop-filter: blur(1px);
+    padding: 1rem;
+  }
+  .first-column-section,
+  .second-column-section,
+  .third-column-section,
+  .fourth-column-section{
+  transition: 250ms;
+  }
+  .first-column-section:hover,
+  .second-column-section:hover,
+  .third-column-section:hover,
+  .fourth-column-section:hover{
+    transform: scale(1.02);
+  } 
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .tradition-section .info-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0 2rem;
+  }
+
+  .first-column-section,
+  .second-column-section,
+  .third-column-section,
+  .fourth-column-section {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+}

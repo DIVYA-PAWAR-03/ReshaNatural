@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../css/mainpage.css'
 
 export default function   Mainpage() {
   return (
@@ -18,7 +18,7 @@ export default function   Mainpage() {
               of nature for a healthier tomorrow."
             </p>
             
-            <Link to={'/Motive'} className="motive">Our Motive  <i class="fa-solid fa-arrow-right-long"></i> </Link>
+            <Link to={'/Motive'} className="motive-btn">Our Motive  <i class="fa-solid fa-arrow-right-long"></i> </Link>
           </div>
           <div className="left-section-image">
             <img src="/images/mainpage.png" className="main-img" />

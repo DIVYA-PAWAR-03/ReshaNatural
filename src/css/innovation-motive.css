@@ -1,0 +1,67 @@
+.heading1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 6rem;
+    margin-left: 3rem;
+  }
+  .motive-section,
+.innovation-section {
+  display: flex;
+}
+.motive-section p {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin: 2rem 3rem 0 3rem;
+  text-align: justify;
+  line-height: 1.4rem;
+}
+.motive-section .motive-img {
+  width: 400px;
+  margin-right: 2rem;
+  border-radius: var(--img-border-radius);
+  box-shadow:var( --innovation-box-shadow);
+  object-fit: cover;
+}
+.innovation-section {
+  margin-bottom: 4rem;
+}
+.innovation-section .innovation-img {
+    width: 500px;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    border-radius: var(--img-border-radius);
+    box-shadow: var( --innovation-box-shadow);
+    object-fit: cover;
+  }
+  .heading2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 6rem 0 3rem 3rem;
+  }
+  .innovation-section .innovation-text p {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin: 2rem 2rem 0 3rem;
+    text-align: justify;
+    line-height: 1.7rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    margin-right: 25rem;
+    margin-bottom: 3rem;
+  }
+  .icons i {
+    color: var(--primary-color);
+    transition: 250ms;
+  }
+  .icons i:hover {
+    color: var(--navbar-bg-color);
+  }
+  .like:hover {
+    fill: var(--navbar-bg-color);
+  }
+  
