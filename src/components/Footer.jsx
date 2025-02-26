@@ -10,7 +10,7 @@ export default function Footer() {
                   </Link>
                 </div>
              <ul className="footer-links">
-               <h4 className="quick-links">QUICK LINKS</h4>
+               <h4 className="footer-links">QUICK LINKS</h4>
              <li><Link to={'/homepage'}>Home</Link></li>
                 <li><Link to={'/company'}>Company</Link></li>
                 <li><Link to={'/products'}>Products</Link></li>
@@ -44,9 +44,7 @@ export default function Footer() {
              
              </div>
              </div>
-            <div className="line-section">
-               
-            </div>
+             <hr />
              <div className="bottom-bar">
                <p> <b>Copyright &copy; 2025 Reshanature All rights reserved. </b> </p>
              </div>

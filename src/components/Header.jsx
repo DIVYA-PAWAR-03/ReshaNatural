@@ -1,7 +1,39 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export default function Header() {
+
+  const [isNavOpen,setIsNavOpen] = useState(false)
+  
+  const handleNavChange = ()=>{
+    if(window.innerWidth > 850){
+      console.log(window.innerWidth);
+      setIsNavOpen(false)
+    }
+    else{
+      // console.log(window.innerWidth);
+      setIsNavOpen((prev)=>!prev)
+    }
+  }
+
+  useEffect(()=>{
+
+    function handleResize(){
+      if(window.innerWidth > 850){
+        console.log(window.innerWidth);
+        setIsNavOpen(false)
+      } 
+    }
+    
+    window.addEventListener("resize",handleResize)
+
+    return ()=>{
+      window.removeEventListener("resize",handleResize)
+    }
+
+  },[])
+  
   return (
     <>
       <header>
@@ -27,11 +59,7 @@ export default function Header() {
               </li>
               
 
-              {/* <div class="hamburgur" id="hamburgur">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div> */}
+               
             </ul>
           </div>
           <div className="header-buttons">
@@ -41,13 +69,20 @@ export default function Header() {
                 </button>
               </Link>
 
-              <button id="theme-switch">
+              {/* <button id="theme-switch">
                 {" "}
                 <i className="fa-solid fa-moon"></i>{" "}
-              </button>
+              </button> */}
+              <button onClick={handleNavChange} className="hamburgur" id="hamburgur">
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+              </button> 
           </div>
+          
         </nav>
 
+{isNavOpen && 
         <nav className="responsive-nav" id="responsive-nav">
           <div className="responsive-links" id="responsive-links">
             <ul>
@@ -71,6 +106,8 @@ export default function Header() {
             </ul>
           </div>
         </nav>
+}
+
       </header>
     </>
   );

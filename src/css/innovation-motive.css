@@ -65,3 +65,52 @@
     fill: var(--navbar-bg-color);
   }
   
+
+  @media screen and (max-width:1000px){
+    .heading1,
+    .heading2 {
+      font-size: 1.3rem;
+    }
+    .motive-section .motive-img  {
+      width: 300px;
+      height: 400px;
+    }
+    .motive-section,
+    .innovation-section{
+     justify-content: center;
+     align-items: center;
+    }
+    .innovation-section .innovation-img{
+      width: 400px;
+      height: 300px;
+    }
+  }
+  @media screen and (max-width:850px){
+    .motive-section{
+     flex-direction: column;
+     gap: 3rem;
+    }
+    .motive-section .motive-img  {
+      width: 90vw;
+      height: 400px;
+      margin: 0;
+    }
+    .innovation-section{
+     flex-direction: column;
+    }
+    .innovation-section .innovation-img{
+      width: 90vw;
+      height: 500px;
+      margin: 0;
+      margin-top: 5rem;
+     
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+

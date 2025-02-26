@@ -30,7 +30,7 @@
     margin-top: 2rem;
   }
   .contactUs-form {
-    width: 650px;
+    width: 650px; 
     padding: 20px;
   }
   .contactUs-form label{
@@ -73,4 +73,14 @@
   .contactUs-form button:hover{
     background: var(--Btn-hover-color);
     
+  }
+
+  @media screen and (max-width:700px) {
+.contact-img 
+    {
+      display: none;
+    }
+    .contactUs-form{
+      width: auto;
+    }
   }

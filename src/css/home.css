@@ -280,3 +280,25 @@ transition: 250ms;
     width: 100%;
   }
 }
+
+
+@media screen and (max-width:700px) {
+  .resha-imp-points{
+    flex-direction: column;
+  }
+  .resha-setup{
+    width: auto;
+  }
+  .resha-philosophy {
+    width: auto;
+  }
+  .natural-heading{
+    text-align: center  ;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .overlap-heading-container .resha-box{
+    width: auto;
+    margin-right: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 .bg-box {
     clip-path: polygon(0% 0%, 0% 0, 70% 100%, 0 100%);
     z-index: -1;
-    height: 410px;
+    height: 430px;
     width: 100%;
     position: absolute;
     background-color: #37da3757;
@@ -69,4 +69,34 @@
   .motive-btn:hover {
     background-color: #4fcf4f;
     color: var(--secondary-color);
+  }
+
+  @media screen and (max-width:1000px) {
+    .main-container {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    .main-img {
+
+      width: 90vw;
+margin: 0 auto;      
+    }
+    
+  .main-container .right-section-content h1 {
+    margin-left: 0;
+  }
+
+  
+  .main-container .right-section-content p {
+    margin:  0;
+    margin-bottom: 3rem;
+  }
+  }
+
+  @media screen and (max-width:600px) {
+    .main-container .right-section-content h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
   }
